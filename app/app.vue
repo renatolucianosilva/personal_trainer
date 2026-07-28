@@ -2,7 +2,7 @@
 useSeoMeta({
   title: 'Personal Trainer — Resultados Definitivos na Academia',
   description: 'Chega de treinos genéricos que não dão resultado. Alcance a hipertrofia e o emagrecimento com uma metodologia focada no seu corpo e na sua rotina.',
-  ogTitle: '[Nome do Personal] — Resultados Definitivos na Academia',
+  ogTitle: 'Personal Trainer — Resultados Definitivos na Academia',
   ogDescription: 'Chega de treinos genéricos que não dão resultado. Alcance a hipertrofia e o emagrecimento com uma metodologia focada no seu corpo e na sua rotina.',
   ogImage: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop', // Sugestão: troque por uma foto do personal na academia
   twitterCard: 'summary_large_image',
