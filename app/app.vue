@@ -11,57 +11,50 @@ useSeoMeta({
 <template>
   <div>
     <SectionsHero
-      title="Título de impacto da sua LP"
-      sub-title="Uma frase curta explicando a proposta de valor"
-      cta-text="Quero minha LP"
-      background-image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600&q=80"
+      title="Transforme seu Corpo e sua Saúde com um Treino Feito para Você"
+      sub-title="Alcance seus objetivos de forma definitiva com um acompanhamento 100% personalizado, que se adapta à sua rotina."
+      cta-text="Quero Começar Meu Treino"
+      backgroundImage="/imagens/head.jpg"
+      backgroundImageMobile="/imagens/hero_mobille.png"
     />
     <SectionsProblema
-        title="Por que sua landing page atual nao converte?"
+        title="Por que é tão difícil manter a constância nos treinos?"
         :items="[
-            'Site Lento perde clique de anúncio pago',
-            'Sem prova social, visitane não confia',
-            'CTA confuso não direciona pra ação nenhuma'
-        ]"
+        'Falta de um planejamento que realmente caiba na sua rotina corrida',
+        'Sensação de estar perdido na academia sem saber por onde começar',
+        'Desmotivação por não ter um profissional acompanhando sua evolução'
+    ]"
     />
-    <SectionsSolucao
-        title="Como Resolvemos isso para você?"
-        :pilares="[
-            { icone: '⚡', titulo: 'Performance', descricao: 'Carregamento em segundos' },
-            { icone: '🎯', titulo: 'Conversão', descricao: 'Estrutura pensada pra transformar clique em cliente' },
-            { icone: '📱', titulo: 'Mobile First', descricao: 'Otimizada pra quem chega via anúncio no celular' },
-  ]"
-    />
-
     <SectionsProvaSocial
-        title="Quem já confiou, aprova"
+        title="Resultados reais de alunos reais"
         :depoimentos="[
-    { nome: 'Ana Costa', cargo: 'Dona, Salão Bella', foto: 'https://i.pravatar.cc/150?img=1', texto: 'Triplicamos os agendamentos em 2 semanas.', nota: 5 },
-    { nome: 'Marcos Lima', cargo: 'Gestor de Tráfego', foto: 'https://i.pravatar.cc/150?img=2', texto: 'A LP converteu muito mais que a anterior.', nota: 5 },
-    { nome: 'Julia Prado', cargo: 'Dona, Studio Fit', foto: 'https://i.pravatar.cc/150?img=3', texto: 'Carregamento rápido fez diferença nos anúncios.', nota: 4 },
-  ]"
+        { nome: 'Ana Costa', cargo: 'Aluna de Consultoria', foto: 'https://i.pravatar.cc/150?img=1', texto: 'Perdi 8kg em 3 meses e recuperei minha autoestima. O acompanhamento pelo WhatsApp é sensacional!', nota: 5 },
+        { nome: 'Marcos Lima', cargo: 'Aluno Presencial', foto: 'https://i.pravatar.cc/150?img=11', texto: 'Treino há anos, mas só agora vi meu corpo mudar de verdade. A correção de postura faz toda a diferença.', nota: 5 },
+        { nome: 'Julia Prado', cargo: 'Aluna de Consultoria', foto: 'https://i.pravatar.cc/150?img=5', texto: 'Mesmo com a rotina corrida de viagens, consegui manter o foco com o treino no app. Muito prático.', nota: 5 }
+    ]"
     />
     <SectionsAutoridade
-        title="Por que confiar na gente?"
-        descricao="Já ajudamos dezenas de negócios locais a transformar tráfego pago em clientes reais."
+        title="Conheça seu personal."
+        descricao="Sou especialista em hipertrofia e emagrecimento, dedicado a transformar não apenas o seu corpo, mas a sua relação com o exercício físico."
+        foto="/imagens/foto_perfil.jpg"
         :estatisticas="[
-    { valor: '150+', label: 'Clientes atendidos' },
-    { valor: '5 anos', label: 'De mercado' },
-    { valor: '4.9/5', label: 'Avaliação média' },
-  ]"
+        { valor: '500+', label: 'Alunos transformados' },
+        { valor: '8 anos', label: 'De experiência prática' },
+        { valor: '100%', label: 'Foco no seu objetivo' }
+    ]"
     />
     <SectionsFaq
         title="Perguntas Frequentes"
         :perguntas="[
-    { pergunta: 'Quanto tempo leva pra ficar pronta?', resposta: 'Em média 3 a 5 dias úteis, dependendo do escopo.' },
-    { pergunta: 'Preciso ter hospedagem própria?', resposta: 'Não, o deploy é feito na Vercel, com plano gratuito.' },
-    { pergunta: 'A LP funciona bem no celular?', resposta: 'Sim, é construída mobile-first desde a base.' },
-  ]"
+        { pergunta: 'Como vou receber e acessar os meus treinos?', resposta: 'Você terá acesso a um aplicativo exclusivo onde poderá ver sua ficha, os vídeos de execução de cada exercício e registrar suas cargas.' },
+        { pergunta: 'Sou iniciante e nunca pisei numa academia, serve pra mim?', resposta: 'Com certeza! O planejamento é feito do zero, respeitando o seu nível atual. Os vídeos ajudam muito na execução correta.' },
+        { pergunta: 'E se eu tiver dúvidas na hora do treino?', resposta: 'Você terá meu suporte direto pelo WhatsApp. Pode mandar mensagem, áudio ou até vídeo executando o movimento para eu corrigir.' }
+    ]"
     />
     <SectionsCta
-        title="Pronto pra sua LP começar a converter?"
-        sub-title="Fale agora e receba uma proposta personalizada pro seu negócio."
-        cta-text="Falar no WhatsApp"
+        title="Pronto para transformar seu corpo e sua rotina?"
+        sub-title="Dê o primeiro passo rumo ao seu objetivo. Fale comigo no WhatsApp e vamos definir o formato ideal para você."
+        cta-text="Quero começar meu treino"
         cta-link="https://wa.me/5500000000000"
     />
   </div>

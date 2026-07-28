@@ -8,7 +8,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <section id="problema" class="px-4 py-16 md:px-16">
+  <section id="problema" class=" bg-gray-200 px-4 py-16 md:px-16">
     <UiSectionTitle :title="title" />
 
     <ul class="mx-auto mt-10 grid max-w-3xl gap-4 md:grid-cols-2">

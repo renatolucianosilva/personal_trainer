@@ -6,6 +6,7 @@ interface Props {
   ctaText: string
   ctaLink?: string
   backgroundImage: string
+  backgroundImageMobile: string
 }
 
 withDefaults(defineProps<Props>(), {
@@ -19,13 +20,21 @@ withDefaults(defineProps<Props>(), {
   px-4 py-16 text-center md:flex-row md:justify-between md:px-16
   md:text-left">
     <NuxtImg
-        :src="backgroundImage"
+        :src="backgroundImageMobile ?? backgroundImage"
         alt=""
-        class="absolute inset-0 -z-10 h-full w-full object-cover"
+        class="absolute inset-0 -z-10 h-full w-full object-cover md:hidden"
         preload
         fetchpriority="high"
     />
-    <div class="absolute inset-0 -z-10 bg-black/50" />
+    <NuxtImg
+        :src="backgroundImage"
+        alt=""
+        class="absolute inset-0 -z-10 h-full w-full object-cover hidden md:block"
+        preload
+        fetchpriority="high"
+    />
+
+    <div class="absolute inset-0 -z-10 bg-black/10" />
     <div class="max-w-xl">
       <h1 class="text-3xl font-bold leading-tight text-white md:text-5xl">
       {{ title }}
