@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
   nitro:{
-    preset:'static'
+    preset:'vercel-static'
   },
   app:{
     head:{
