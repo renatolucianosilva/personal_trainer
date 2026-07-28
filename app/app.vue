@@ -1,13 +1,14 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Nome do Negócio — Proposta de valor em poucas palavras',
-  description: 'Descrição curta e persuasiva da oferta, até uns 155 caracteres pra não cortar no Google.',
-  ogTitle: 'Nome do Negócio — Proposta de valor em poucas palavras',
-  ogDescription: 'Mesma descrição persuasiva, usada quando o link é compartilhado no WhatsApp/Facebook.',
-  ogImage: 'https://media.istockphoto.com/id/1501103626/pt/foto/defocused-background-image-of-a-spacious-hallway-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=sfd7Rf6Vjsx3Mx0PnaAA-iBPRBicW8raXj5xlVPzrUA=',
+  title: 'Personal Trainer — Resultados Definitivos na Academia',
+  description: 'Chega de treinos genéricos que não dão resultado. Alcance a hipertrofia e o emagrecimento com uma metodologia focada no seu corpo e na sua rotina.',
+  ogTitle: '[Nome do Personal] — Resultados Definitivos na Academia',
+  ogDescription: 'Chega de treinos genéricos que não dão resultado. Alcance a hipertrofia e o emagrecimento com uma metodologia focada no seu corpo e na sua rotina.',
+  ogImage: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop', // Sugestão: troque por uma foto do personal na academia
   twitterCard: 'summary_large_image',
 })
 </script>
+
 <template>
   <div>
     <SectionsHero
