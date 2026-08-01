@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const img = useImage()
 
 interface Props {
   title: string
@@ -19,20 +20,19 @@ withDefaults(defineProps<Props>(), {
   class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden
   px-4 py-16 text-center md:flex-row md:justify-between md:px-16
   md:text-left">
-    <NuxtImg
-        :src="backgroundImageMobile ?? backgroundImage"
-        alt=""
-        class="absolute inset-0 -z-10 h-full w-full object-cover md:hidden"
-        preload
-        fetchpriority="high"
-    />
-    <NuxtImg
-        :src="backgroundImage"
-        alt=""
-        class="absolute inset-0 -z-10 h-full w-full object-cover hidden md:block"
-        preload
-        fetchpriority="high"
-    />
+    <picture class="absolute inset-0 -z-10 h-full w-full">
+      <source
+          v-if="backgroundImageMobile"
+          media="(max-width: 767px)"
+          :srcset="img(backgroundImageMobile, { width: 800 })"
+      >
+      <img
+          :src="img(backgroundImage, { width: 1600 })"
+          alt=""
+          class="h-full w-full object-cover"
+          fetchpriority="high"
+      >
+    </picture>
 
     <div class="absolute inset-0 -z-10 bg-black/10" />
     <div class="max-w-xl">

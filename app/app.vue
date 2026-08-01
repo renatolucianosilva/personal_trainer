@@ -58,5 +58,6 @@ useSeoMeta({
         cta-text="Quero começar meu treino"
         cta-link="https://wa.me/5500000000000"
     />
+    <UiFooter />
   </div>
 </template>
