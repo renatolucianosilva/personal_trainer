@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const { app } = useRuntimeConfig()
+const asset = (path: string) => app.baseURL.replace(/\/$/, '') + path
+
 useSeoMeta({
   title: 'Personal Trainer — Resultados Definitivos na Academia',
   description: 'Chega de treinos genéricos que não dão resultado. Alcance a hipertrofia e o emagrecimento com uma metodologia focada no seu corpo e na sua rotina.',
@@ -15,8 +18,8 @@ useSeoMeta({
       title="Transforme seu Corpo e sua Saúde com um Treino Feito para Você"
       sub-title="Alcance seus objetivos de forma definitiva com um acompanhamento 100% personalizado, que se adapta à sua rotina."
       cta-text="Quero Começar Meu Treino"
-      backgroundImage="/imagens/head.jpg"
-      backgroundImageMobile="/imagens/hero_mobille.png"
+      :backgroundImage="asset('/imagens/head.jpg')"
+      :backgroundImageMobile="asset('/imagens/hero_mobille.png')"
     />
     <SectionsProblema
         title="Por que é tão difícil manter a constância nos treinos?"
@@ -37,7 +40,7 @@ useSeoMeta({
     <SectionsAutoridade
         title="Conheça seu personal."
         descricao="Sou especialista em hipertrofia e emagrecimento, dedicado a transformar não apenas o seu corpo, mas a sua relação com o exercício físico."
-        foto="/imagens/foto_perfil.jpg"
+        :foto="asset('/imagens/foto_perfil.jpg')"
         :estatisticas="[
         { valor: '500+', label: 'Alunos transformados' },
         { valor: '8 anos', label: 'De experiência prática' },
